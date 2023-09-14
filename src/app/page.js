@@ -55,18 +55,25 @@ export default function Home() {
       <section className="py-12 bg-gray-300">
         <ScrollCarousel />
       </section>
-      <section className="min-h-screen px-20 pt-40 pb-[12rem] bg-orange-500/70 flex flex-col">
+      <section
+        className="min-h-screen px-20 pt-40 pb-[12rem] bg-orange-500/70 flex flex-col"
+        id="envios"
+      >
         <h2 className="font-bold text-4xl">¿Como hago un ENVIO?</h2>
         <div className="w-[60rem] flex flex-col justify-center items-center self-center mt-32">
           <Tabs
             size={"lg"}
-            className="font-bold  py-8"
+            className="font-bold py-3"
             radius={"lg"}
-            color={"text-orange-500"}
+            color={"default"}
           >
-            <Tab key="bariloche" title="Bariloche" className="flex flex-col">
-              <Card className="m-0 p-5">
-                <CardBody className="font-semibold text-3xl inline">
+            <Tab
+              key="bariloche"
+              title="Bariloche"
+              className="flex flex-col px-6 py-6"
+            >
+              <Card className="m-0">
+                <CardBody className="font-semibold text-3xl inline text-center p-7">
                   En <span className="text-orange-500">Bariloche </span>
                   contamos con una sucurlas en la calle{" "}
                   <span className="text-orange-500">Mitre 1360</span>. Podes
@@ -74,9 +81,13 @@ export default function Home() {
                 </CardBody>
               </Card>
             </Tab>
-            <Tab key="sanmartin" title="San Martin" className="flex flex-col">
-              <Card className="m-0 p-5">
-                <CardBody className="font-semibold text-3xl inline">
+            <Tab
+              key="sanmartin"
+              title="San Martin"
+              className="flex flex-col px-6 py-6"
+            >
+              <Card className="m-0">
+                <CardBody className="font-semibold text-3xl inline text-center p-7">
                   En <span className="text-orange-500">Bariloche </span>
                   contamos con una sucurlas en la calle{" "}
                   <span className="text-orange-500">Mitre 1360</span>. Podes
@@ -84,9 +95,9 @@ export default function Home() {
                 </CardBody>
               </Card>
             </Tab>
-            <Tab key="junin" title="Junin" className="flex flex-col">
-              <Card className="m-0 p-5">
-                <CardBody className="font-semibold text-3xl inline">
+            <Tab key="junin" title="Junin" className="flex flex-col px-6 py-6">
+              <Card className="m-0">
+                <CardBody className="font-semibold text-3xl inline text-center p-7">
                   En <span className="text-orange-500">Bariloche </span>
                   contamos con una sucurlas en la calle{" "}
                   <span className="text-orange-500">Mitre 1360</span>. Podes
@@ -97,10 +108,10 @@ export default function Home() {
             <Tab
               key="villa"
               title="Villa la Angostura"
-              className="flex flex-col"
+              className="flex flex-col px-6 py-6"
             >
-              <Card className="m-0 p-5">
-                <CardBody className="font-semibold text-3xl inline">
+              <Card className="m-0">
+                <CardBody className="font-semibold text-3xl inline text-center p-7">
                   En <span className="text-orange-500">Bariloche </span>
                   contamos con una sucurlas en la calle{" "}
                   <span className="text-orange-500">Mitre 1360</span>. Podes
@@ -108,9 +119,13 @@ export default function Home() {
                 </CardBody>
               </Card>
             </Tab>
-            <Tab key="neuquen" title="Neuquen" className="flex flex-col">
-              <Card className="m-0 p-5">
-                <CardBody className="font-semibold text-3xl inline">
+            <Tab
+              key="neuquen"
+              title="Neuquen"
+              className="flex flex-col px-6 py-6"
+            >
+              <Card className="m-0">
+                <CardBody className="font-semibold text-3xl inline text-center p-7">
                   En <span className="text-orange-500">Bariloche </span>
                   contamos con una sucurlas en la calle{" "}
                   <span className="text-orange-500">Mitre 1360</span>. Podes

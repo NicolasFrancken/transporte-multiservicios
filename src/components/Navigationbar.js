@@ -33,7 +33,12 @@ export default function Navigationbar() {
         </Link>
       </NavbarItem>
       <NavbarItem>
-        <Button size="lg" className="font-bold bg-orange-400">
+        <Button
+          size="lg"
+          className="font-bold bg-orange-400"
+          as={Link}
+          href="#envios"
+        >
           ENVIOS
         </Button>
       </NavbarItem>
