@@ -14,10 +14,24 @@ body {
 
 
 .background{
-  background-image: url("../../public/transit.jpeg");
+  background-image: url("https://images.unsplash.com/photo-1602721186896-1b21c7405c0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.background2{
+  background-image: url("https://images.unsplash.com/photo-1549194898-60fd030ecc0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.background3{
+  background-image: url("https://images.unsplash.com/photo-1665454446552-3857d357151e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .background-1 {

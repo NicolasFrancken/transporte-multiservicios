@@ -7,11 +7,13 @@ import {
   Image,
   Tabs,
   Tab,
-  Link,
+  useDisclosure,
 } from "@nextui-org/react";
 import { NextUIProvider } from "@nextui-org/react";
 import Navigationbar from "@/components/Navigationbar";
 import dynamic from "next/dynamic";
+import WppModal from "@/components/WppModal";
+import LinkModal from "@/components/LinkModal";
 
 const ScrollCarousel = dynamic(
   () => import("@/components/ScrollCarouselComponent"),
@@ -19,17 +21,28 @@ const ScrollCarousel = dynamic(
 );
 
 export default function Home() {
+  const {
+    isOpen: isOpenWpp,
+    onOpen: onOpenWpp,
+    onOpenChange: onOpenChangeWpp,
+  } = useDisclosure();
+
+  const {
+    isOpen: isOpenLink,
+    onOpen: onOpenLink,
+    onOpenChange: onOpenChangeLink,
+  } = useDisclosure();
+
   return (
     <NextUIProvider>
       <Navigationbar />
-
       <section className="min-h-screen px-20 pt-40 pb-[12rem] background flex flex-col justify-between">
         <div className="w-[65rem]">
           <h1 className="font-bold text-8xl text-white">
             SERVICIO DIARIO <br /> DE
             <span className="text-orange-500"> CARGAS RAPIDAS</span>
           </h1>
-          <p className="font-bold text-3xl text-black mt-4">
+          <p className="font-bold text-3xl text-white mt-4">
             ENRTEGA Y RETIRO A DOMICILIO
           </p>
         </div>
@@ -48,18 +61,22 @@ export default function Home() {
         <Button
           className="fixed w-fit h-fit bg-transparent bottom-0 right-0 p-0 mx-6 my-6 z-10"
           radius="full"
+          onPress={onOpenWpp}
         >
+          <WppModal isOpen={isOpenWpp} onOpenChange={onOpenChangeWpp} />
           <Image src={"/WhatsApp.webp"} alt="WhatsApp" width={70} height={70} />
         </Button>
       </section>
-      <section className="py-12 bg-gray-300">
-        <ScrollCarousel />
-      </section>
+      <div className="py-64 background2">
+        <section className="py-12 bg-white/70">
+          <ScrollCarousel />
+        </section>
+      </div>
       <section
-        className="min-h-screen px-20 pt-40 pb-[12rem] bg-orange-500/70 flex flex-col"
+        className="min-h-screen px-20 pt-40 pb-[12rem] flex flex-col background3"
         id="envios"
       >
-        <h2 className="font-bold text-4xl">¿Como hago un ENVIO?</h2>
+        <h2 className="font-bold text-4xl text-white">¿Como hago un ENVIO?</h2>
         <div className="w-[60rem] flex flex-col justify-center items-center self-center mt-32">
           <Tabs
             size={"lg"}
@@ -75,8 +92,8 @@ export default function Home() {
               <Card className="m-0">
                 <CardBody className="font-semibold text-3xl inline text-center p-7">
                   En <span className="text-orange-500">Bariloche </span>
-                  contamos con una sucurlas en la calle{" "}
-                  <span className="text-orange-500">Mitre 1360</span>. Podes
+                  contamos con una sucursal en la calle
+                  <span className="text-orange-500"> Mitre 1360</span>. Podes
                   acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp!
                 </CardBody>
               </Card>
@@ -88,20 +105,21 @@ export default function Home() {
             >
               <Card className="m-0">
                 <CardBody className="font-semibold text-3xl inline text-center p-7">
-                  En <span className="text-orange-500">Bariloche </span>
-                  contamos con una sucurlas en la calle{" "}
-                  <span className="text-orange-500">Mitre 1360</span>. Podes
-                  acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp!
+                  En <span className="text-orange-500">San Martin </span>
+                  contamos con una sucursal en la calle
+                  <span className="text-orange-500"> General Roca 542</span>.
+                  Podes acercarte y dejar tu paquete o escribirnos a nuestro
+                  WhatsApp!
                 </CardBody>
               </Card>
             </Tab>
             <Tab key="junin" title="Junin" className="flex flex-col px-6 py-6">
               <Card className="m-0">
                 <CardBody className="font-semibold text-3xl inline text-center p-7">
-                  En <span className="text-orange-500">Bariloche </span>
-                  contamos con una sucurlas en la calle{" "}
-                  <span className="text-orange-500">Mitre 1360</span>. Podes
-                  acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp!
+                  En <span className="text-orange-500">Junin </span>
+                  no contamos con una sucursal. Podes acercarte a San Martin y
+                  dejar tu paquete o escribirnos a nuestro WhatsApp y lo pasamos
+                  a buscar!
                 </CardBody>
               </Card>
             </Tab>
@@ -112,10 +130,10 @@ export default function Home() {
             >
               <Card className="m-0">
                 <CardBody className="font-semibold text-3xl inline text-center p-7">
-                  En <span className="text-orange-500">Bariloche </span>
-                  contamos con una sucurlas en la calle{" "}
-                  <span className="text-orange-500">Mitre 1360</span>. Podes
-                  acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp!
+                  En{" "}
+                  <span className="text-orange-500">Villa La Angostura </span>
+                  no contamos con sucursal. Escribirnos a nuestro WhatsApp y lo
+                  pasamos a buscar!
                 </CardBody>
               </Card>
             </Tab>
@@ -126,23 +144,23 @@ export default function Home() {
             >
               <Card className="m-0">
                 <CardBody className="font-semibold text-3xl inline text-center p-7">
-                  En <span className="text-orange-500">Bariloche </span>
-                  contamos con una sucurlas en la calle{" "}
-                  <span className="text-orange-500">Mitre 1360</span>. Podes
-                  acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp!
+                  En <span className="text-orange-500">Nuequen </span>
+                  no contamos con una sucursal. Escribirnos a nuestro WhatsApp y
+                  lo pasamos a buscar!
                 </CardBody>
               </Card>
             </Tab>
           </Tabs>
-          <Link
-            className="self-end font-semibold text-2xl mt-4"
+          <Button
+            className="self-end font-semibold text-2xl mt-4 text-white"
             isBlock
             showAnchorIcon
-            href="#"
             color="foreground"
+            onPress={onOpenLink}
           >
             ¿Como envalo mi paquete?
-          </Link>
+          </Button>
+          <LinkModal isOpen={isOpenLink} onOpenChange={onOpenChangeLink} />
         </div>
       </section>
     </NextUIProvider>
