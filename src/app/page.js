@@ -14,6 +14,7 @@ import Navigationbar from "@/components/Navigationbar";
 import dynamic from "next/dynamic";
 import WppModal from "@/components/WppModal";
 import LinkModal from "@/components/LinkModal";
+import Footer from "@/components/Footer";
 
 const ScrollCarousel = dynamic(
   () => import("@/components/ScrollCarouselComponent"),
@@ -75,95 +76,105 @@ export default function Home() {
           <ScrollCarousel />
         </section>
       </div>
-      <section
-        className="min-h-screen px-20 pt-40 pb-[12rem] flex flex-col background3 "
-        id="envios"
-      >
-        <h2 className="font-bold text-4xl text-white">¿Como hago un ENVIO?</h2>
-        <div className="w-[60rem] flex flex-col justify-center items-center self-center mt-32">
-          <Tabs
-            size={"lg"}
-            className="font-bold py-3"
-            radius={"lg"}
-            color={"default"}
-          >
-            <Tab
-              key="bariloche"
-              title="Bariloche"
-              className="flex flex-col px-6 py-6"
+      <div className="background3 relative h-full">
+        <section
+          className="min-h-screen px-20 pt-40 pb-[12rem] flex flex-col  "
+          id="envios"
+        >
+          <h2 className="font-bold text-4xl text-white">
+            ¿Como hago un ENVIO?
+          </h2>
+          <div className="w-[60rem] flex flex-col justify-center items-center self-center mt-32">
+            <Tabs
+              size={"lg"}
+              className="font-bold py-3"
+              radius={"lg"}
+              color={"default"}
             >
-              <Card className="m-0">
-                <CardBody className="font-semibold text-3xl inline text-center p-7">
-                  En <span className="text-orange-500">Bariloche </span>
-                  contamos con una sucursal en la calle
-                  <span className="text-orange-500"> Mitre 1360</span>. Podes
-                  acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp!
-                </CardBody>
-              </Card>
-            </Tab>
-            <Tab
-              key="sanmartin"
-              title="San Martin"
-              className="flex flex-col px-6 py-6"
+              <Tab
+                key="bariloche"
+                title="Bariloche"
+                className="flex flex-col px-6 py-6"
+              >
+                <Card className="m-0">
+                  <CardBody className="font-semibold text-3xl inline text-center p-7">
+                    En <span className="text-orange-500">Bariloche </span>
+                    contamos con una sucursal en la calle
+                    <span className="text-orange-500"> Mitre 1360</span>. Podes
+                    acercarte y dejar tu paquete o escribirnos a nuestro
+                    WhatsApp!
+                  </CardBody>
+                </Card>
+              </Tab>
+              <Tab
+                key="sanmartin"
+                title="San Martin"
+                className="flex flex-col px-6 py-6"
+              >
+                <Card className="m-0">
+                  <CardBody className="font-semibold text-3xl inline text-center p-7">
+                    En <span className="text-orange-500">San Martin </span>
+                    contamos con una sucursal en la calle
+                    <span className="text-orange-500"> General Roca 542</span>.
+                    Podes acercarte y dejar tu paquete o escribirnos a nuestro
+                    WhatsApp!
+                  </CardBody>
+                </Card>
+              </Tab>
+              <Tab
+                key="junin"
+                title="Junin"
+                className="flex flex-col px-6 py-6"
+              >
+                <Card className="m-0">
+                  <CardBody className="font-semibold text-3xl inline text-center p-7">
+                    En <span className="text-orange-500">Junin </span>
+                    no contamos con una sucursal. Podes acercarte a San Martin y
+                    dejar tu paquete o escribirnos a nuestro WhatsApp y lo
+                    pasamos a buscar!
+                  </CardBody>
+                </Card>
+              </Tab>
+              <Tab
+                key="villa"
+                title="Villa la Angostura"
+                className="flex flex-col px-6 py-6"
+              >
+                <Card className="m-0">
+                  <CardBody className="font-semibold text-3xl inline text-center p-7">
+                    En{" "}
+                    <span className="text-orange-500">Villa La Angostura </span>
+                    no contamos con sucursal. Escribirnos a nuestro WhatsApp y
+                    lo pasamos a buscar!
+                  </CardBody>
+                </Card>
+              </Tab>
+              <Tab
+                key="neuquen"
+                title="Neuquen"
+                className="flex flex-col px-6 py-6"
+              >
+                <Card className="m-0">
+                  <CardBody className="font-semibold text-3xl inline text-center p-7">
+                    En <span className="text-orange-500">Nuequen </span>
+                    no contamos con una sucursal. Escribirnos a nuestro WhatsApp
+                    y lo pasamos a buscar!
+                  </CardBody>
+                </Card>
+              </Tab>
+            </Tabs>
+            <Button
+              className="self-end font-semibold text-2xl mr-6 mt-3 text-black bg-white/50"
+              isBlock
+              onPress={onOpenLink}
             >
-              <Card className="m-0">
-                <CardBody className="font-semibold text-3xl inline text-center p-7">
-                  En <span className="text-orange-500">San Martin </span>
-                  contamos con una sucursal en la calle
-                  <span className="text-orange-500"> General Roca 542</span>.
-                  Podes acercarte y dejar tu paquete o escribirnos a nuestro
-                  WhatsApp!
-                </CardBody>
-              </Card>
-            </Tab>
-            <Tab key="junin" title="Junin" className="flex flex-col px-6 py-6">
-              <Card className="m-0">
-                <CardBody className="font-semibold text-3xl inline text-center p-7">
-                  En <span className="text-orange-500">Junin </span>
-                  no contamos con una sucursal. Podes acercarte a San Martin y
-                  dejar tu paquete o escribirnos a nuestro WhatsApp y lo pasamos
-                  a buscar!
-                </CardBody>
-              </Card>
-            </Tab>
-            <Tab
-              key="villa"
-              title="Villa la Angostura"
-              className="flex flex-col px-6 py-6"
-            >
-              <Card className="m-0">
-                <CardBody className="font-semibold text-3xl inline text-center p-7">
-                  En{" "}
-                  <span className="text-orange-500">Villa La Angostura </span>
-                  no contamos con sucursal. Escribirnos a nuestro WhatsApp y lo
-                  pasamos a buscar!
-                </CardBody>
-              </Card>
-            </Tab>
-            <Tab
-              key="neuquen"
-              title="Neuquen"
-              className="flex flex-col px-6 py-6"
-            >
-              <Card className="m-0">
-                <CardBody className="font-semibold text-3xl inline text-center p-7">
-                  En <span className="text-orange-500">Nuequen </span>
-                  no contamos con una sucursal. Escribirnos a nuestro WhatsApp y
-                  lo pasamos a buscar!
-                </CardBody>
-              </Card>
-            </Tab>
-          </Tabs>
-          <Button
-            className="self-end font-semibold text-2xl mr-6 mt-3 text-black bg-white/50"
-            isBlock
-            onPress={onOpenLink}
-          >
-            ¿Como envalo mi paquete?
-          </Button>
-          <LinkModal isOpen={isOpenLink} onOpenChange={onOpenChangeLink} />
-        </div>
-      </section>
+              ¿Como envalo mi paquete?
+            </Button>
+            <LinkModal isOpen={isOpenLink} onOpenChange={onOpenChangeLink} />
+          </div>
+        </section>
+        <Footer />
+      </div>
     </NextUIProvider>
   );
 }
