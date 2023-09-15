@@ -2,25 +2,35 @@ import Image from "next/image";
 import {
   Navbar,
   NavbarBrand,
-  NavbarContent,
   NavbarItem,
   Link,
   Button,
-  Card,
-  CardBody,
 } from "@nextui-org/react";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Navigationbar() {
+  const pathname = usePathname();
+
+  let where;
+  if (pathname === "/") {
+    where = "#main";
+  } else {
+    where = "/";
+  }
+
   return (
     <Navbar
       isBordered={true}
       isBlurred={true}
-      maxWidth="2xl"
-      className="fixed h-20"
+      maxWidth="full"
+      className="fixed h-20 px-14"
     >
-      <NavbarBrand>
-        <Image src={"/mini-logo.jpeg"} alt="logo" width={40} height={40} />
-        <p className="font-bold pl-2">TRANSPORTE</p>
+      <NavbarBrand className="scroll-smooth" as={Link} href={where}>
+        <Image src={"/logo-nobg.png"} alt="logo" width={130} height={70} />
+        {/* <p className="font-bold pl-2 text-xs">
+          TRANSPORTE <br />
+          MULTISERVICIOS
+        </p> */}
       </NavbarBrand>
       <NavbarItem>
         <Link

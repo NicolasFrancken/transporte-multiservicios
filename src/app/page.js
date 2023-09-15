@@ -36,7 +36,10 @@ export default function Home() {
   return (
     <NextUIProvider>
       <Navigationbar />
-      <section className="min-h-screen px-20 pt-40 pb-[12rem] background flex flex-col justify-between">
+      <section
+        className="min-h-screen px-20 pt-40 pb-[12rem] background flex flex-col justify-between"
+        id="main"
+      >
         <div className="w-[65rem]">
           <h1 className="font-bold text-8xl text-white">
             SERVICIO DIARIO <br /> DE
@@ -68,12 +71,12 @@ export default function Home() {
         </Button>
       </section>
       <div className="py-64 background2">
-        <section className="py-12 bg-white/70">
+        <section className="py-12 bg-white/50">
           <ScrollCarousel />
         </section>
       </div>
       <section
-        className="min-h-screen px-20 pt-40 pb-[12rem] flex flex-col background3"
+        className="min-h-screen px-20 pt-40 pb-[12rem] flex flex-col background3 "
         id="envios"
       >
         <h2 className="font-bold text-4xl text-white">¿Como hago un ENVIO?</h2>
@@ -152,10 +155,8 @@ export default function Home() {
             </Tab>
           </Tabs>
           <Button
-            className="self-end font-semibold text-2xl mt-4 text-white"
+            className="self-end font-semibold text-2xl mr-6 mt-3 text-black bg-white/50"
             isBlock
-            showAnchorIcon
-            color="foreground"
             onPress={onOpenLink}
           >
             ¿Como envalo mi paquete?

@@ -29,7 +29,7 @@ export default function WppModal({ isOpen, onOpenChange }) {
                   <CardBody className="flex flex-row justify-between py-2 pl-8">
                     <h3 className="w-fit font-semibold text-xl">Bariloche</h3>
                     <Button
-                      className="w-min h-fit bg-transparent p-0 m-0"
+                      className="w-fit h-fit bg-transparent p-0 m-0"
                       radius="full"
                     >
                       <Image
@@ -45,7 +45,7 @@ export default function WppModal({ isOpen, onOpenChange }) {
                   <CardBody className="flex flex-row justify-between py-2 pl-8">
                     <h3 className="w-fit font-semibold text-xl">San Martin</h3>
                     <Button
-                      className="w-min h-fit bg-transparent p-0 m-0"
+                      className="w-fit h-fit bg-transparent p-0 m-0"
                       radius="full"
                     >
                       <Image
@@ -61,7 +61,7 @@ export default function WppModal({ isOpen, onOpenChange }) {
                   <CardBody className="flex flex-row justify-between py-2 pl-8">
                     <h3 className="w-fit font-semibold text-xl">Junin</h3>
                     <Button
-                      className="w-min h-fit bg-transparent p-0 m-0"
+                      className="w-fit h-fit bg-transparent p-0 m-0"
                       radius="full"
                     >
                       <Image
@@ -79,7 +79,7 @@ export default function WppModal({ isOpen, onOpenChange }) {
                       Villa la Angostura
                     </h3>
                     <Button
-                      className="w-min h-fit bg-transparent p-0 m-0"
+                      className="w-fit h-fit bg-transparent p-0 m-0"
                       radius="full"
                     >
                       <Image
@@ -95,7 +95,7 @@ export default function WppModal({ isOpen, onOpenChange }) {
                   <CardBody className="flex flex-row justify-between py-2 pl-8">
                     <h3 className="w-fit font-semibold text-xl">Neuquen</h3>
                     <Button
-                      className="w-min h-fit bg-transparent p-0 m-0"
+                      className="w-fit h-fit bg-transparent p-0 m-0"
                       radius="full"
                     >
                       <Image
