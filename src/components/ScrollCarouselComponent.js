@@ -9,7 +9,7 @@ const ScrollCarouselComponent = () => {
       {urls.map((image) => (
         <div
           key={image}
-          className={`w-96 h-96 rounded-2xl background-${image}`}
+          className={`w-48 h-48 lg:w-96 lg:h-96 rounded-2xl background-${image}`}
         ></div>
       ))}
     </ScrollCarousel>
