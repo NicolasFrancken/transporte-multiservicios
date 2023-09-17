@@ -94,7 +94,7 @@ export default function Home() {
           className="min-h-screen px-8 py-[7rem]  lg:px-28 lg:pt-40 flex flex-col text-center sm:max-lg:justify-center lg:text-start"
           id="envios"
         >
-          <h2 className="font-bold text-2xl  sm:text-4xl lg:text-5xl text-black ">
+          <h2 className="font-bold text-2xl  sm:text-4xl lg:text-5xl text-white ">
             ¿Como hago un ENVIO?
           </h2>
           <div className="w-full lg:w-[60rem] flex flex-col justify-center items-center self-center lg:mt-32">

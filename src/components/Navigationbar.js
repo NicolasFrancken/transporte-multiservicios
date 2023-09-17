@@ -10,32 +10,17 @@ import {
   NavbarMenu,
   useDisclosure,
 } from "@nextui-org/react";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import UsModal from "./UsModal";
 
 export default function Navigationbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [where1, setWhere1] = useState("");
-  const [where2, setWhere2] = useState("");
-
-  const pathname = usePathname();
 
   const {
     isOpen: isOpenUs,
     onOpen: onOpenUs,
     onOpenChange: onOpenChangeUs,
   } = useDisclosure();
-
-  useEffect(() => {
-    if (pathname === "/") {
-      setWhere1("#envios");
-      setWhere2("#main");
-    } else {
-      setWhere1("/#envios");
-      setWhere2("/");
-    }
-  }, []);
 
   const handleUsClick = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -54,14 +39,13 @@ export default function Navigationbar() {
       className="fixed h-20 p-0 lg:px-20 "
       isMenuOpen={isMenuOpen}
     >
-      <NavbarBrand className="scroll-smooth" as={Link} href={where2}>
+      <NavbarBrand className="scroll-smooth" as={Link} href={"/"}>
         <Image src={"/logo-nobg.png"} alt="logo" width={130} height={70} />
       </NavbarBrand>
       <UsModal isOpen={isOpenUs} onOpenChange={onOpenChangeUs} />
       <NavbarItem>
         <Link
           isBlock
-          href="/quienes-somos"
           color="foreground"
           className="font-bold text-lg hidden md:flex bg-transparent"
           as={Button}
@@ -75,7 +59,6 @@ export default function Navigationbar() {
           size="lg"
           className="font-bold bg-orange-400 hidden md:flex"
           as={Link}
-          href={where1}
         >
           ENVIOS
         </Button>
@@ -87,7 +70,7 @@ export default function Navigationbar() {
             size="lg"
             className="font-bold bg-orange-400"
             as={Link}
-            href={where1}
+            href={"#envios"}
             onClick={handleEnviosClick}
           >
             ENVIOS
@@ -96,7 +79,6 @@ export default function Navigationbar() {
         <NavbarMenuItem>
           <Link
             isBlock
-            href="/quienes-somos"
             color="foreground"
             className="font-bold text-lg bg-transparent"
             as={Button}
