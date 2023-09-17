@@ -5,11 +5,7 @@ import {
   CardBody,
   Button,
   Image,
-  Tabs,
-  Tab,
   useDisclosure,
-  Accordion,
-  AccordionItem,
 } from "@nextui-org/react";
 import { NextUIProvider } from "@nextui-org/react";
 import Navigationbar from "@/components/Navigationbar";
@@ -17,6 +13,8 @@ import dynamic from "next/dynamic";
 import WppModal from "@/components/WppModal";
 import LinkModal from "@/components/LinkModal";
 import Footer from "@/components/Footer";
+import AccordionComponent from "@/components/AccordionComponent";
+import TabsComponent from "@/components/TabsComponent";
 
 const ScrollCarousel = dynamic(
   () => import("@/components/ScrollCarouselComponent"),
@@ -100,151 +98,8 @@ export default function Home() {
             ¿Como hago un ENVIO?
           </h2>
           <div className="w-full lg:w-[60rem] flex flex-col justify-center items-center self-center lg:mt-32">
-            <Tabs
-              size={"lg"}
-              className="font-bold py-3 w-full lg:w-fit hidden lg:flex "
-              radius={"lg"}
-              color={"default"}
-            >
-              <Tab
-                key="bariloche"
-                title="Bariloche"
-                className="flex flex-col px-6 py-6"
-              >
-                <Card className="m-0 hidden lg:flex">
-                  <CardBody className="font-semibold text-3xl inline text-center p-7">
-                    En <span className="text-orange-500">Bariloche </span>
-                    contamos con una sucursal en la calle
-                    <span className="text-orange-500"> Mitre 1360</span>. Podes
-                    acercarte y dejar tu paquete o escribirnos a nuestro
-                    WhatsApp!
-                  </CardBody>
-                </Card>
-              </Tab>
-              <Tab
-                key="sanmartin"
-                title="San Martin"
-                className="flex flex-col px-6 py-6"
-              >
-                <Card className="m-0 hidden lg:flex">
-                  <CardBody className="font-semibold text-3xl inline text-center p-7">
-                    En <span className="text-orange-500">San Martin </span>
-                    contamos con una sucursal en la calle
-                    <span className="text-orange-500"> General Roca 542</span>.
-                    Podes acercarte y dejar tu paquete o escribirnos a nuestro
-                    WhatsApp!
-                  </CardBody>
-                </Card>
-              </Tab>
-              <Tab
-                key="junin"
-                title="Junin"
-                className="flex flex-col px-6 py-6"
-              >
-                <Card className="m-0 hidden lg:flex">
-                  <CardBody className="font-semibold text-3xl inline text-center p-7">
-                    En <span className="text-orange-500">Junin </span>
-                    no contamos con una sucursal. Podes acercarte a San Martin y
-                    dejar tu paquete o escribirnos a nuestro WhatsApp y lo
-                    pasamos a buscar!
-                  </CardBody>
-                </Card>
-              </Tab>
-              <Tab
-                key="villa"
-                title="Villa la Angostura"
-                className="flex flex-col px-6 py-6"
-              >
-                <Card className="m-0 hidden lg:flex">
-                  <CardBody className="font-semibold text-3xl inline text-center p-7">
-                    En
-                    <span className="text-orange"> Villa La Angostura </span>
-                    no contamos con sucursal. Escribirnos a nuestro WhatsApp y
-                    lo pasamos a buscar!
-                  </CardBody>
-                </Card>
-              </Tab>
-              <Tab
-                key="neuquen"
-                title="Neuquen"
-                className="flex flex-col px-6 py-6"
-              >
-                <Card className="m-0 hidden lg:flex">
-                  <CardBody className="font-semibold text-3xl inline text-center p-7">
-                    En <span className="text-orange-500">Nuequen </span>
-                    no contamos con una sucursal. Escribirnos a nuestro WhatsApp
-                    y lo pasamos a buscar!
-                  </CardBody>
-                </Card>
-              </Tab>
-            </Tabs>
-            <Accordion variant="shadow" className="lg:hidden" isCompact={false}>
-              <AccordionItem
-                key="1"
-                aria-label="Bariloche"
-                title="Bariloche"
-                className="font-semibold"
-              >
-                <p>
-                  En <span className="text-orange-500">Bariloche </span>
-                  contamos con una sucursal en la calle
-                  <span className="text-orange-500"> Mitre 1360</span>. Podes
-                  acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp!
-                </p>
-              </AccordionItem>
-              <AccordionItem
-                key="2"
-                aria-label="San Martin"
-                title="San Martin"
-                className="font-semibold"
-              >
-                <p>
-                  En <span className="text-orange-500">San Martin </span>
-                  contamos con una sucursal en la calle
-                  <span className="text-orange-500"> General Roca 542</span>.
-                  Podes acercarte y dejar tu paquete o escribirnos a nuestro
-                  WhatsApp!
-                </p>
-              </AccordionItem>
-              <AccordionItem
-                key="3"
-                aria-label="Junin"
-                title="Junin"
-                className="font-semibold"
-              >
-                <p>
-                  En <span className="text-orange-500">Junin </span>
-                  no contamos con una sucursal. Podes acercarte a San Martin y
-                  dejar tu paquete o escribirnos a nuestro WhatsApp y lo pasamos
-                  a buscar!
-                </p>
-              </AccordionItem>
-              <AccordionItem
-                key="4"
-                aria-label="Villa la Angostura"
-                title="Villa la Angostura"
-                className="font-semibold"
-              >
-                <p>
-                  En
-                  <span className="text-orange-500"> Villa La Angostura </span>
-                  no contamos con sucursal. Escribirnos a nuestro WhatsApp y lo
-                  pasamos a buscar!
-                </p>
-              </AccordionItem>
-              <AccordionItem
-                key="5"
-                aria-label="Neuquen"
-                title="Neuquen"
-                className="font-semibold"
-              >
-                <p>
-                  En <span className="text-orange-500">Nuequen </span>
-                  no contamos con una sucursal. Escribirnos a nuestro WhatsApp y
-                  lo pasamos a buscar!
-                </p>
-              </AccordionItem>
-            </Accordion>
+            <TabsComponent />
+            <AccordionComponent />
             <Button
               className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-3 text-black bg-white/50"
               isBlock

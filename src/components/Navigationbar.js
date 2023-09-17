@@ -9,16 +9,10 @@ import {
   Button,
   NavbarMenu,
   useDisclosure,
-  Modal,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  Card,
-  CardHeader,
-  CardBody,
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import UsModal from "./UsModal";
 
 export default function Navigationbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,9 +37,12 @@ export default function Navigationbar() {
     }
   }, []);
 
-  const handleClick = () => {
+  const handleUsClick = () => {
     setIsMenuOpen(!isMenuOpen);
     onOpenUs();
+  };
+  const handleEnviosClick = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -60,6 +57,7 @@ export default function Navigationbar() {
       <NavbarBrand className="scroll-smooth" as={Link} href={where2}>
         <Image src={"/logo-nobg.png"} alt="logo" width={130} height={70} />
       </NavbarBrand>
+      <UsModal isOpen={isOpenUs} onOpenChange={onOpenChangeUs} />
       <NavbarItem>
         <Link
           isBlock
@@ -71,52 +69,6 @@ export default function Navigationbar() {
         >
           Sobre Nosotros
         </Link>
-        <Modal isOpen={isOpenUs} onOpenChange={onOpenChangeUs} size="full">
-          <ModalContent>
-            {(onClose) => (
-              <>
-                <section className="min-h-screen px-8  py-[7rem] lg:px-28 lg:pt-40 flex flex-col justify-center background4">
-                  <ModalBody className="p-0">
-                    <Card className="bg-white/50">
-                      <CardHeader className="font-bold text-xl md:text-2xl pb-0 pt-6 px-6 md:pt-12 md:px-12 ">
-                        ¿Quenes somos?
-                      </CardHeader>
-                      <CardBody className="font-semibold text-sm md:text-xl py-6 px-6 md:pt-6 md:pb-12 md:px-12">
-                        <p>
-                          Somos una empresa familiar que comenzó en el 2002, con
-                          una sola camioneta. De a poco fuimos generando
-                          confianza en los clientes de Bariloche, y estos nos
-                          trajeron mas clientes.
-                        </p>
-                        <p>
-                          Luego pudimos adquiir otra camioneta para viajar hacia
-                          San martin y Junin.
-                        </p>
-                        <p>
-                          Al cabo de 10 años ya teniamos 3 camionetas y 1
-                          camion. Nuestro trabajo y dedicacion hizo que el 70%
-                          de las empresas locales confien en nuestros servicios
-                          para el transporte de su mercaderia, asi como clientes
-                          unipersonales para el transporte de pequeños paquetes.
-                        </p>
-                        <p>
-                          Ha sido un largo camino de aprendizaje. Hoy en dia nos
-                          consideramos los mejores en lo que hacemos, con mas de
-                          5 camionetas y 1 camion que viajan constantemente por
-                          toda la zona.
-                        </p>
-                        <p>
-                          Agradecemos a todos nuestros clientes por confiar
-                          diariamente en nosotros!
-                        </p>
-                      </CardBody>
-                    </Card>
-                  </ModalBody>
-                </section>
-              </>
-            )}
-          </ModalContent>
-        </Modal>
       </NavbarItem>
       <NavbarItem>
         <Button
@@ -136,7 +88,7 @@ export default function Navigationbar() {
             className="font-bold bg-orange-400"
             as={Link}
             href={where1}
-            onClick={handleClick}
+            onClick={handleEnviosClick}
           >
             ENVIOS
           </Button>
@@ -148,7 +100,7 @@ export default function Navigationbar() {
             color="foreground"
             className="font-bold text-lg bg-transparent"
             as={Button}
-            onPress={handleClick}
+            onPress={handleUsClick}
           >
             Sobre Nosotros
           </Link>
