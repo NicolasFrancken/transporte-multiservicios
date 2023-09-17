@@ -39,16 +39,16 @@ export default function Home() {
   return (
     <NextUIProvider>
       <Navigationbar />
-      {/* <section
+      <section
         className="min-h-screen px-8 pt-48 pb-[5rem] lg:px-28 lg:pt-40 background flex flex-col justify-between"
         id="main"
       >
         <div className="xl:w-[65rem] flex flex-col items-center lg:items-start lg:text-start">
-          <h1 className="font-bold text-3xl md:text-5xl lg:text-6xl xl:text-8xl text-white text-center lg:text-start">
+          <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-white text-center lg:text-start">
             SERVICIO DIARIO <br /> DE
             <span className="text-orange-500"> CARGAS RAPIDAS</span>
           </h1>
-          <p className="font-bold text-sm md:text-xl lg:text-3xl xl:text-5xl text-white mt-2 lg:mt-4">
+          <p className="font-bold text-lg md:text-xl lg:text-3xl xl:text-5xl text-white mt-2 lg:mt-4">
             ENRTEGA Y RETIRO A DOMICILIO
           </p>
         </div>
@@ -90,13 +90,13 @@ export default function Home() {
         <section className="py-8 lg:py-12 bg-white/50">
           <ScrollCarousel />
         </section>
-      </div> */}
+      </div>
       <div className="background3 relative h-full">
         <section
-          className="min-h-screen px-8 py-[7rem] lg:px-28 lg:pt-40 flex flex-col  "
+          className="min-h-screen px-8 py-[7rem]  lg:px-28 lg:pt-40 flex flex-col text-center sm:max-lg:justify-center lg:text-start"
           id="envios"
         >
-          <h2 className="font-bold text-4xl text-white">
+          <h2 className="font-bold text-2xl  sm:text-4xl lg:text-5xl text-black ">
             ¿Como hago un ENVIO?
           </h2>
           <div className="w-full lg:w-[60rem] flex flex-col justify-center items-center self-center lg:mt-32">
@@ -178,37 +178,75 @@ export default function Home() {
                 </Card>
               </Tab>
             </Tabs>
-            <Accordion variant="shadow" className="lg:hidden">
-              <AccordionItem key="1" aria-label="Bariloche" title="Bariloche">
-                En <span className="text-orange-500">Bariloche </span>
-                contamos con una sucursal en la calle
-                <span className="text-orange-500"> Mitre 1360</span>. Podes
-                acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp!
+            <Accordion variant="shadow" className="lg:hidden" isCompact={false}>
+              <AccordionItem
+                key="1"
+                aria-label="Bariloche"
+                title="Bariloche"
+                className="font-semibold"
+              >
+                <p>
+                  En <span className="text-orange-500">Bariloche </span>
+                  contamos con una sucursal en la calle
+                  <span className="text-orange-500"> Mitre 1360</span>. Podes
+                  acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp!
+                </p>
               </AccordionItem>
               <AccordionItem
-                key="1"
+                key="2"
                 aria-label="San Martin"
                 title="San Martin"
-              ></AccordionItem>
-
+                className="font-semibold"
+              >
+                <p>
+                  En <span className="text-orange-500">San Martin </span>
+                  contamos con una sucursal en la calle
+                  <span className="text-orange-500"> General Roca 542</span>.
+                  Podes acercarte y dejar tu paquete o escribirnos a nuestro
+                  WhatsApp!
+                </p>
+              </AccordionItem>
               <AccordionItem
-                key="1"
+                key="3"
                 aria-label="Junin"
                 title="Junin"
-              ></AccordionItem>
+                className="font-semibold"
+              >
+                <p>
+                  En <span className="text-orange-500">Junin </span>
+                  no contamos con una sucursal. Podes acercarte a San Martin y
+                  dejar tu paquete o escribirnos a nuestro WhatsApp y lo pasamos
+                  a buscar!
+                </p>
+              </AccordionItem>
               <AccordionItem
-                key="1"
+                key="4"
                 aria-label="Villa la Angostura"
                 title="Villa la Angostura"
-              ></AccordionItem>
+                className="font-semibold"
+              >
+                <p>
+                  En
+                  <span className="text-orange-500"> Villa La Angostura </span>
+                  no contamos con sucursal. Escribirnos a nuestro WhatsApp y lo
+                  pasamos a buscar!
+                </p>
+              </AccordionItem>
               <AccordionItem
-                key="1"
+                key="5"
                 aria-label="Neuquen"
                 title="Neuquen"
-              ></AccordionItem>
+                className="font-semibold"
+              >
+                <p>
+                  En <span className="text-orange-500">Nuequen </span>
+                  no contamos con una sucursal. Escribirnos a nuestro WhatsApp y
+                  lo pasamos a buscar!
+                </p>
+              </AccordionItem>
             </Accordion>
             <Button
-              className="self-center lg:self-end font-semibold texl-lg lg:text-2xl mt-4 lg:mr-6 lg:mt-3 text-black bg-white/50"
+              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-3 text-black bg-white/50"
               isBlock
               onPress={onOpenLink}
             >

@@ -4,14 +4,14 @@ import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="flex flex-col items-center justify-center px-20 py-5 bg-white/50 text-black">
-      <div className="flex mb-5">
+      <div className="flex mb-2 lg:mb-5">
         <Link
           href="https://www.instagram.com/transporte_multiservicios/"
           color="foreground"
           isExternal={true}
           className="pr-2"
         >
-          <FaInstagram className="text-black h-10 w-10" />
+          <FaInstagram className="text-black h-7 w-7 lg:h-10 lg:w-10" />
         </Link>
         <Link
           href="https://www.facebook.com/transportemulti"
@@ -19,10 +19,10 @@ export default function Footer() {
           isExternal={true}
           className="pl-2"
         >
-          <FaFacebookSquare className="text-black h-10 w-10" />
+          <FaFacebookSquare className="text-black h-7 w-7 lg:h-10 lg:w-10" />
         </Link>
       </div>
-      <p className="text-center font-semibold">
+      <p className="text-center font-semibold text-xs lg:text-base">
         ©2023 TRANSPORTE MULTISERVICIOS <br />
         Todos los derechos reservados
       </p>

@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <NextUIProvider>
       <Navigationbar />
-      <section className="min-h-screen px-20 py-[12rem] flex flex-col justify-center background4">
+      <section className="min-h-screen px-8  py-[7rem] lg:px-28 lg:pt-40 flex flex-col justify-center background4">
         <Card className="bg-white/50">
-          <CardHeader className="font-bold text-2xl pt-12 pb-0 px-12">
+          <CardHeader className="font-bold text-2xl pb-0 pt-6 px-6 md:pt-12 md:px-12 ">
             ¿Quenes somos?
           </CardHeader>
-          <CardBody className="font-semibold text-xl p-12 pt-6">
+          <CardBody className="font-semibold text-xl py-6 px-6 md:pt-6 md:pb-12 md:px-12">
             <p>
               Somos una empresa familiar que comenzó en el 2002, con una sola
               camioneta. De a poco fuimos generando confianza en los clientes de
