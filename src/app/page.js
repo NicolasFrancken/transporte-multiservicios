@@ -38,7 +38,7 @@ export default function Home() {
     <NextUIProvider>
       <Navigationbar />
       <section
-        className=".h md:min-h-screen px-8 pt-48 pb-[5rem] lg:px-28 lg:pt-40 background flex flex-col justify-between"
+        className="min-h-screen px-8 pt-48 pb-[5rem] lg:px-28 lg:pt-40 background flex flex-col justify-between"
         id="main"
       >
         <div className="xl:w-[65rem] flex flex-col items-center lg:items-start lg:text-start">
@@ -63,7 +63,7 @@ export default function Home() {
           </CardBody>
         </Card>
         <Button
-          className="fixed w-fit h-fit bg-transparent bottom-0 right-0 p-0 mx-3 my-3 lg:mx-6 lg:my-6 z-10"
+          className="fixed w-fit h-fit bg-transparent min-w-fit gap-unit-0 p-3 lg:p-6 bottom-0 right-0 z-10"
           radius="full"
           onPress={onOpenWpp}
         >
