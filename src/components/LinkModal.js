@@ -14,17 +14,17 @@ export default function LinkModal({ isOpen, onOpenChange }) {
     <Modal
       isOpen={isOpen}
       onOpenChange={onOpenChange}
-      className="bg-white/70"
+      className="bg-white/70 gap-2"
       backdrop="blur"
       size="4xl"
     >
       <ModalContent>
         {(onClose) => (
           <>
-            <ModalHeader className=" font-bold text-xl lg:text-3xl px-3 lg:px-12 pt-6 pb-0">
+            <ModalHeader className=" font-bold text-xl lg:text-3xl px-6 lg:px-12 pt-6 pb-0">
               Como embalar bien tu paquete
             </ModalHeader>
-            <ModalBody className="px-3 py-3 pb-6 lg:px-12 lg:py-6 lg:pb-12">
+            <ModalBody className="px-6 py-2 pb-6 lg:px-12 lg:py-6 lg:pb-12 gap-2">
               <p className="font-semibold text-lg lg:text-2xl">
                 Para prevenir cualquier incidente, te recomendamos que
                 <span className="text-orange-500"> envuelvas </span>

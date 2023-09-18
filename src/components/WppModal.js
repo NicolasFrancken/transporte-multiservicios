@@ -23,90 +23,68 @@ export default function WppModal({ isOpen, onOpenChange }) {
             <ModalHeader className="font-bold text-2xl py-6">
               ¿De donde sos?
             </ModalHeader>
-            <ModalBody className="pt-0 pb-3">
-              <ul className="flex flex-col">
-                <Card className="flex mb-3">
-                  <CardBody className="flex flex-row justify-between py-2 pl-8">
-                    <h3 className="w-fit font-semibold text-xl">Bariloche</h3>
-                    <Button
-                      className="w-fit h-fit bg-transparent p-0 m-0"
-                      radius="full"
-                    >
-                      <Image
-                        src={"/WhatsApp.webp"}
-                        alt="WhatsApp"
-                        width={30}
-                        height={30}
-                      />
-                    </Button>
-                  </CardBody>
-                </Card>
-                <Card className="flex mb-3">
-                  <CardBody className="flex flex-row justify-between py-2 pl-8">
-                    <h3 className="w-fit font-semibold text-xl">San Martin</h3>
-                    <Button
-                      className="w-fit h-fit bg-transparent p-0 m-0"
-                      radius="full"
-                    >
-                      <Image
-                        src={"/WhatsApp.webp"}
-                        alt="WhatsApp"
-                        width={30}
-                        height={30}
-                      />
-                    </Button>
-                  </CardBody>
-                </Card>
-                <Card className="flex mb-3">
-                  <CardBody className="flex flex-row justify-between py-2 pl-8">
-                    <h3 className="w-fit font-semibold text-xl">Junin</h3>
-                    <Button
-                      className="w-fit h-fit bg-transparent p-0 m-0"
-                      radius="full"
-                    >
-                      <Image
-                        src={"/WhatsApp.webp"}
-                        alt="WhatsApp"
-                        width={30}
-                        height={30}
-                      />
-                    </Button>
-                  </CardBody>
-                </Card>
-                <Card className="flex mb-3">
-                  <CardBody className="flex flex-row justify-between py-2 pl-8">
-                    <h3 className="w-fit font-semibold text-xl">
-                      Villa la Angostura
-                    </h3>
-                    <Button
-                      className="w-fit h-fit bg-transparent p-0 m-0"
-                      radius="full"
-                    >
-                      <Image
-                        src={"/WhatsApp.webp"}
-                        alt="WhatsApp"
-                        width={30}
-                        height={30}
-                      />
-                    </Button>
-                  </CardBody>
-                </Card>
-                <Card className="flex mb-3">
-                  <CardBody className="flex flex-row justify-between py-2 pl-8">
-                    <h3 className="w-fit font-semibold text-xl">Neuquen</h3>
-                    <Button
-                      className="w-fit h-fit bg-transparent p-0 m-0"
-                      radius="full"
-                    >
-                      <Image
-                        src={"/WhatsApp.webp"}
-                        alt="WhatsApp"
-                        width={30}
-                        height={30}
-                      />
-                    </Button>
-                  </CardBody>
-                </Card>
+            <ModalBody className="pt-0 pb-6">
+              <ul className="flex flex-col gap-2">
+                <Button
+                  className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
+                  radius=""
+                >
+                  Bariloche
+                  <Image
+                    src={"/WhatsApp.webp"}
+                    alt="WhatsApp"
+                    width={30}
+                    height={30}
+                  />
+                </Button>
+                <Button
+                  className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
+                  radius=""
+                >
+                  San Martín
+                  <Image
+                    src={"/WhatsApp.webp"}
+                    alt="WhatsApp"
+                    width={30}
+                    height={30}
+                  />
+                </Button>
+                <Button
+                  className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
+                  radius=""
+                >
+                  Junin
+                  <Image
+                    src={"/WhatsApp.webp"}
+                    alt="WhatsApp"
+                    width={30}
+                    height={30}
+                  />
+                </Button>
+                <Button
+                  className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
+                  radius=""
+                >
+                  Villa la Angostura
+                  <Image
+                    src={"/WhatsApp.webp"}
+                    alt="WhatsApp"
+                    width={30}
+                    height={30}
+                  />
+                </Button>
+                <Button
+                  className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
+                  radius=""
+                >
+                  Neuquen
+                  <Image
+                    src={"/WhatsApp.webp"}
+                    alt="WhatsApp"
+                    width={30}
+                    height={30}
+                  />
+                </Button>
               </ul>
             </ModalBody>
           </>
