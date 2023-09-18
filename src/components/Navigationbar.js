@@ -39,7 +39,7 @@ export default function Navigationbar() {
       className="fixed h-20 p-0 lg:px-20 "
       isMenuOpen={isMenuOpen}
     >
-      <NavbarBrand className="scroll-smooth" as={Link} href={"/"}>
+      <NavbarBrand as={Link} href={"#main"}>
         <Image src={"/logo-nobg.png"} alt="logo" width={130} height={70} />
       </NavbarBrand>
       <UsModal isOpen={isOpenUs} onOpenChange={onOpenChangeUs} />
@@ -59,6 +59,7 @@ export default function Navigationbar() {
           size="lg"
           className="font-bold bg-orange-400 hidden md:flex"
           as={Link}
+          href="#envios"
         >
           ENVIOS
         </Button>

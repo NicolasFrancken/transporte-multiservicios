@@ -28,18 +28,21 @@ export default function LinkModal({ isOpen, onOpenChange }) {
               <p className="font-semibold text-lg lg:text-2xl">
                 Para prevenir cualquier incidente, te recomendamos que
                 <span className="text-orange-500"> envuelvas </span>
-                el contenido del paquete en papel y plastico de burbujas.
+                el contenido del paquete en papel y plástico de burbujas.
                 Nosotros cuidamos al 100% los paquetes, pero siempre preferimos
                 prevenir imprevistos.
               </p>
               <p className="font-semibold text-lg lg:text-2xl">
-                Tambien te recomendamos
+                También te recomendamos
                 <span className="text-orange-500"> ponerlo en una caja</span> y
                 cerrar la misma con cinta.
               </p>
               <p className="font-semibold text-lg lg:text-2xl">
-                Afuera del paquete escribí bien grande: Nombre, Dirección y
-                Número de telefono
+                Afuera del paquete escribí bien grande:
+                <span className="font-bold">
+                  {" "}
+                  Nombre, Dirección y Número de telefono
+                </span>
               </p>
             </ModalBody>
           </>

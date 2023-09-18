@@ -1,7 +1,6 @@
 import {
-  Card,
-  CardBody,
   Button,
+  Link,
   Image,
   Modal,
   ModalContent,
@@ -21,13 +20,14 @@ export default function WppModal({ isOpen, onOpenChange }) {
         {(onClose) => (
           <>
             <ModalHeader className="font-bold text-2xl py-6">
-              ¿De donde sos?
+              ¿De dónde sos?
             </ModalHeader>
             <ModalBody className="pt-0 pb-6">
               <ul className="flex flex-col gap-2">
                 <Button
+                  as={Link}
                   className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
-                  radius=""
+                  href="https://wa.me/+542944959344?text=Quiero%20hacer%20un%20envio%20desde%20Bariloche!%20¿Cómo%20hago?"
                 >
                   Bariloche
                   <Image
@@ -38,8 +38,9 @@ export default function WppModal({ isOpen, onOpenChange }) {
                   />
                 </Button>
                 <Button
+                  as={Link}
                   className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
-                  radius=""
+                  href="https://wa.me/+542944959344?text=Quiero%20hacer%20un%20envio%20desde%20San%20Martín%Cómo%20hago?"
                 >
                   San Martín
                   <Image
@@ -50,10 +51,11 @@ export default function WppModal({ isOpen, onOpenChange }) {
                   />
                 </Button>
                 <Button
+                  as={Link}
                   className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
-                  radius=""
+                  href="https://wa.me/+542944959344?text=Quiero%20hacer%20un%20envio%20desde%20Junín!%20¿Cómo%20hago?"
                 >
-                  Junin
+                  Junín
                   <Image
                     src={"/WhatsApp.webp"}
                     alt="WhatsApp"
@@ -62,8 +64,9 @@ export default function WppModal({ isOpen, onOpenChange }) {
                   />
                 </Button>
                 <Button
+                  as={Link}
                   className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
-                  radius=""
+                  href="https://wa.me/+542944959344?text=Quiero%20hacer%20un%20envio%20desde%20Villa%20la%20Angostura!%20¿Cómo%20hago?"
                 >
                   Villa la Angostura
                   <Image
@@ -74,10 +77,11 @@ export default function WppModal({ isOpen, onOpenChange }) {
                   />
                 </Button>
                 <Button
+                  as={Link}
                   className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
-                  radius=""
+                  href="https://wa.me/+542944959344?text=Quiero%20hacer%20un%20envio%20desde%20Neuquén!%20¿Cómo%20hago?"
                 >
-                  Neuquen
+                  Neuquén
                   <Image
                     src={"/WhatsApp.webp"}
                     alt="WhatsApp"

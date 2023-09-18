@@ -5,11 +5,15 @@ import {
   CardBody,
   Button,
   Image,
+  Link,
   useDisclosure,
 } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
+
 import { NextUIProvider } from "@nextui-org/react";
-import Navigationbar from "@/components/Navigationbar";
 import dynamic from "next/dynamic";
+
+import Navigationbar from "@/components/Navigationbar";
 import WppModal from "@/components/WppModal";
 import LinkModal from "@/components/LinkModal";
 import Footer from "@/components/Footer";
@@ -22,6 +26,8 @@ const ScrollCarousel = dynamic(
 );
 
 export default function Home() {
+  const router = useRouter();
+
   const {
     isOpen: isOpenWpp,
     onOpen: onOpenWpp,
@@ -44,7 +50,7 @@ export default function Home() {
         <div className="xl:w-[65rem] flex flex-col items-center lg:items-start lg:text-start">
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-white text-center lg:text-start">
             SERVICIO DIARIO <br /> DE
-            <span className="text-orange-500"> CARGAS RAPIDAS</span>
+            <span className="text-orange-500"> CARGAS RÁPIDAS</span>
           </h1>
           <p className="font-bold text-lg md:text-xl lg:text-3xl xl:text-5xl text-white mt-2 lg:mt-4">
             ENRTEGA Y RETIRO A DOMICILIO
@@ -57,8 +63,8 @@ export default function Home() {
         >
           <CardBody>
             <p className="font-bold text-xl lg:text-3xl xl:text-5xl text-center">
-              BARILOCHE - SAN MARTIN - JUNIN - EL BOLSON - VILLA LA ANGOSTURA -
-              NEUQUEN
+              BARILOCHE - SAN MARTÍN - JUNÍN - EL BOLSÓN - VILLA LA ANGOSTURA -
+              NEUQUÉN
             </p>
           </CardBody>
         </Card>
@@ -107,7 +113,23 @@ export default function Home() {
             >
               ¿Como embalo mi paquete?
             </Button>
-            <LinkModal isOpen={isOpenLink} onOpenChange={onOpenChangeLink} />
+            <LinkModal
+              isOpen={isOpenLink}
+              onOpenChange={onOpenChangeLink}
+              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-3 text-black bg-white/50"
+              isBlock
+            />
+            <Button
+              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-3 text-black bg-white/50"
+              isBlock
+              onPress={() => {
+                router.push(
+                  "https://wa.me/+542944959344?text=Quiero%20cotizar%20un%20envío!"
+                );
+              }}
+            >
+              Cotizá tu paquete
+            </Button>
           </div>
         </section>
         <Footer />

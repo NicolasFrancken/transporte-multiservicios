@@ -35,26 +35,26 @@ export default function UsModal({ isOpen, onOpenChange }) {
                   </CardHeader>
                   <CardBody className="font-semibold text-sm md:text-xl py-6 px-6 md:pt-6 md:pb-12 md:px-12">
                     <p>
-                      Somos una empresa familiar que comenzó en el 2002, con una
+                      Somos una empresa familiar que comenzó en el 2002 con una
                       sola camioneta. De a poco fuimos generando confianza en
-                      los clientes de Bariloche, y estos nos trajeron mas
+                      los clientes de Bariloche, y estos nos trajeron más
                       clientes.
                     </p>
                     <p>
-                      Luego pudimos adquiir otra camioneta para viajar hacia San
-                      martin y Junin.
+                      Luego pudimos adquirir otra camioneta para viajar hacia
+                      San Martín y Junín.
                     </p>
                     <p>
-                      Al cabo de 10 años ya teniamos 3 camionetas y 1 camion.
-                      Nuestro trabajo y dedicacion hizo que el 70% de las
-                      empresas locales confien en nuestros servicios para el
-                      transporte de su mercaderia, asi como clientes
+                      Al cabo de 10 años ya teníamos 3 camionetas y 1 camión.
+                      Nuestro trabajo y dedicación hizo que el 70% de las
+                      empresas locales confíen en nuestros servicios para el
+                      transporte de su mercadería, así como clientes
                       unipersonales para el transporte de pequeños paquetes.
                     </p>
                     <p>
                       Ha sido un largo camino de aprendizaje. Hoy en dia nos
-                      consideramos los mejores en lo que hacemos, con mas de 5
-                      camionetas y 1 camion que viajan constantemente por toda
+                      consideramos los mejores en lo que hacemos, con más de 5
+                      camionetas y 1 camión que viajan constantemente por toda
                       la zona.
                     </p>
                     <p>
