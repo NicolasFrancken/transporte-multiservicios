@@ -22,7 +22,7 @@ export default function LinkModal({ isOpen, onOpenChange }) {
         {(onClose) => (
           <>
             <ModalHeader className=" font-bold text-xl lg:text-3xl px-3 lg:px-12 pt-6 pb-0">
-              Como envalar bien tu paquete
+              Como embalar bien tu paquete
             </ModalHeader>
             <ModalBody className="px-3 py-3 pb-6 lg:px-12 lg:py-6 lg:pb-12">
               <p className="font-semibold text-lg lg:text-2xl">

@@ -38,7 +38,7 @@ export default function Home() {
     <NextUIProvider>
       <Navigationbar />
       <section
-        className="min-h-screen px-8 pt-48 pb-[5rem] lg:px-28 lg:pt-40 background flex flex-col justify-between"
+        className=".h md:min-h-screen px-8 pt-48 pb-[5rem] lg:px-28 lg:pt-40 background flex flex-col justify-between"
         id="main"
       >
         <div className="xl:w-[65rem] flex flex-col items-center lg:items-start lg:text-start">
@@ -105,7 +105,7 @@ export default function Home() {
               isBlock
               onPress={onOpenLink}
             >
-              ¿Como envalo mi paquete?
+              ¿Como embalo mi paquete?
             </Button>
             <LinkModal isOpen={isOpenLink} onOpenChange={onOpenChangeLink} />
           </div>
