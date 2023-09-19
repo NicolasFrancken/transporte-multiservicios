@@ -44,7 +44,7 @@ export default function Home() {
     <NextUIProvider>
       <Navigationbar />
       <section
-        className="min-h-screen px-8 pt-48 pb-[5rem] lg:px-28 lg:pt-40 background1 flex flex-col justify-between"
+        className="md:min-h-screen px-8 pt-48 pb-[5rem] lg:px-28 lg:pt-40 background1 flex flex-col justify-between"
         id="main"
       >
         <div className="xl:w-[65rem] flex flex-col items-center lg:items-start lg:text-start">
@@ -97,7 +97,7 @@ export default function Home() {
       </div>
       <div className="background3 relative h-full">
         <section
-          className="min-h-screen px-8 py-[7rem] lg:px-28 lg:pt-40 flex flex-col text-center sm:max-lg:justify-center lg:text-start"
+          className="min-h-screen px-8 py-[7rem] pb-4 lg:pb-[7rem] lg:px-28 lg:pt-40 flex flex-col text-center sm:max-lg:justify-start lg:text-start"
           id="envios"
         >
           <h2 className="font-bold text-2xl  sm:text-4xl lg:text-5xl text-white ">
