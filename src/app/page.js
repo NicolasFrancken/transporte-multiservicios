@@ -124,7 +124,7 @@ export default function Home() {
               isBlock
               onPress={() => {
                 router.push(
-                  "https://wa.me/+542944959344?text=Quiero%20cotizar%20un%20envío!"
+                  "https://wa.me/+542944640770?text=Quiero%20cotizar%20un%20envío!"
                 );
               }}
             >
