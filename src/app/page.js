@@ -44,7 +44,7 @@ export default function Home() {
     <NextUIProvider>
       <Navigationbar />
       <section
-        className="min-h-screen px-8 pt-48 pb-[5rem] lg:px-28 lg:pt-40 background flex flex-col justify-between"
+        className="min-h-screen px-8 pt-48 pb-[5rem] lg:px-28 lg:pt-40 background1 flex flex-col justify-between"
         id="main"
       >
         <div className="xl:w-[65rem] flex flex-col items-center lg:items-start lg:text-start">
@@ -97,17 +97,17 @@ export default function Home() {
       </div>
       <div className="background3 relative h-full">
         <section
-          className="min-h-screen px-8 py-[7rem]  lg:px-28 lg:pt-40 flex flex-col text-center sm:max-lg:justify-center lg:text-start"
+          className="min-h-screen px-8 py-[7rem] lg:px-28 lg:pt-40 flex flex-col text-center sm:max-lg:justify-center lg:text-start"
           id="envios"
         >
           <h2 className="font-bold text-2xl  sm:text-4xl lg:text-5xl text-white ">
-            ¿Como hago un ENVIO?
+            ¿Como hago un <span className="text-orange-500">envío</span>?
           </h2>
           <div className="w-full lg:w-[60rem] flex flex-col justify-center items-center self-center lg:mt-32">
             <TabsComponent />
             <AccordionComponent />
             <Button
-              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-3 text-black bg-white/50"
+              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-0 text-black bg-white"
               isBlock
               onPress={onOpenLink}
             >
@@ -120,7 +120,7 @@ export default function Home() {
               isBlock
             />
             <Button
-              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-3 text-black bg-white/50"
+              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-3 text-black bg-white"
               isBlock
               onPress={() => {
                 router.push(

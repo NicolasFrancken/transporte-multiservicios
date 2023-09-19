@@ -16,28 +16,29 @@ body {
   margin: 0;
 }
 
-.background{
-  background-image: url("https://images.unsplash.com/photo-1602721186896-1b21c7405c0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80");
+.background1{
+  background-image: url("../../public/background1.webp");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 .background2{
-  background-image: url("https://images.unsplash.com/photo-1549194898-60fd030ecc0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+  background-image: url("../../public/background2.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 .background3{
-  background-image: url("https://images.unsplash.com/photo-1665454446552-3857d357151e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80");
+  background-image: url("../../public/background3.webp");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-attachment: fixed;
 }
+
 .background4{
-  background-image: url("https://images.unsplash.com/photo-1494822493217-c9840aba840c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80s");
+  background-image: url("../../public/background4.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -45,56 +46,56 @@ body {
 }
 
 .background-1 {
-  background-image: url("../../public/1.jpeg");
+  background-image: url("../../public/1.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .background-2 {
-  background-image: url("../../public/2.jpeg");
+  background-image: url("../../public/2.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .background-3 {
-  background-image: url("../../public/3.jpeg");
+  background-image: url("../../public/3.webp");
     background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .background-4 {
-  background-image: url("../../public/4.jpeg");
+  background-image: url("../../public/4.webp");
     background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .background-5 {
-  background-image: url("../../public/5.jpeg");
+  background-image: url("../../public/5.webp");
     background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }  
 .background-6 {
-  background-image: url("../../public/6.jpeg");
+  background-image: url("../../public/6.webp");
     background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .background-7{
-  background-image: url("../../public/7.jpeg");
+  background-image: url("../../public/7.webp");
     background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .background-8 {
-  background-image: url("../../public/8.jpeg");
+  background-image: url("../../public/8.webp");
     background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .background-9 {
-  background-image: url("../../public/9.jpeg");
-    background-repeat: no-repeat;
+  background-image: url("../../public/9.webp");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }

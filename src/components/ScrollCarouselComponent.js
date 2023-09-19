@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ScrollCarousel from "scroll-carousel-react";
 
 const ScrollCarouselComponent = () => {

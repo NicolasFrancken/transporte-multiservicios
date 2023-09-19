@@ -40,7 +40,7 @@ export default function Navigationbar() {
       isMenuOpen={isMenuOpen}
     >
       <NavbarBrand as={Link} href={"#main"}>
-        <Image src={"/logo-nobg.png"} alt="logo" width={130} height={70} />
+        <Image src={"/logo-nobg.webp"} alt="logo" width={130} height={70} />
       </NavbarBrand>
       <UsModal isOpen={isOpenUs} onOpenChange={onOpenChangeUs} />
       <NavbarItem>
