@@ -111,7 +111,7 @@ export default function Home() {
               isBlock
               onPress={onOpenLink}
             >
-              ¿Como embalo mi paquete?
+              ¿Cómo embalo mi paquete?
             </Button>
             <LinkModal
               isOpen={isOpenLink}
