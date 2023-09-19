@@ -53,7 +53,7 @@ export default function Home() {
             <span className="text-orange-500"> CARGAS RÁPIDAS</span>
           </h1>
           <p className="font-bold text-lg md:text-xl lg:text-3xl xl:text-5xl text-white mt-2 lg:mt-4">
-            ENRTEGA Y RETIRO A DOMICILIO
+            ENTREGA Y RETIRO A DOMICILIO
           </p>
         </div>
         <Card
