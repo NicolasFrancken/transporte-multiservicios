@@ -23,27 +23,27 @@ body {
   background-size: cover;
   -webkit-background-size:cover;
   -moz-background-size: cover;
--o-background-size: cover;
+  -o-background-size: cover;
 }
 .background2{
   background-image: url("../../public/background2.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: scroll;
-    -webkit-background-size:cover;
+  background-attachment: fixed;
+  -webkit-background-size:cover;
   -moz-background-size: cover;
--o-background-size: cover;
+  -o-background-size: cover;
 }
 .background3{
   background-image: url("../../public/background3.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  background-attachment: scroll;
-    -webkit-background-size:cover;
+  background-attachment: fixed;
+  -webkit-background-size:cover;
   -moz-background-size: cover;
- -o-background-size: cover;
+  -o-background-size: cover;
 }
 
 .background4{
@@ -52,9 +52,9 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-    -webkit-background-size:cover;
+  -webkit-background-size:cover;
   -moz-background-size: cover;
--o-background-size: cover;
+  -o-background-size: cover;
 }
 
 .background-1 {
@@ -71,7 +71,7 @@ body {
 }
 .background-3 {
   background-image: url("../../public/3.webp");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -83,25 +83,25 @@ body {
 }
 .background-5 {
   background-image: url("../../public/5.webp");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }  
 .background-6 {
   background-image: url("../../public/6.webp");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .background-7{
   background-image: url("../../public/7.webp");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .background-8 {
   background-image: url("../../public/8.webp");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -112,3 +112,8 @@ body {
   background-size: cover;
 }
 
+@media only screen and (max-width: 700px) {
+  .background3{
+    background-image: url("../../public/7.webp");
+  }
+}
