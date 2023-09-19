@@ -21,6 +21,9 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  -webkit-background-size:cover;
+  -moz-background-size: cover;
+-o-background-size: cover;
 }
 .background2{
   background-image: url("../../public/background2.webp");
@@ -28,6 +31,9 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+    -webkit-background-size:cover;
+  -moz-background-size: cover;
+-o-background-size: cover;
 }
 .background3{
   background-image: url("../../public/background3.webp");
@@ -35,6 +41,9 @@ body {
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
+    -webkit-background-size:cover;
+  -moz-background-size: cover;
+-o-background-size: cover;
 }
 
 .background4{
@@ -43,6 +52,9 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+    -webkit-background-size:cover;
+  -moz-background-size: cover;
+-o-background-size: cover;
 }
 
 .background-1 {
@@ -100,8 +112,3 @@ body {
   background-size: cover;
 }
 
-@media only scree and (max-width: 900px) {
-  .background3, .background-1, .background-2, .background-4{
-    background-size: contain;
-  }
-}
