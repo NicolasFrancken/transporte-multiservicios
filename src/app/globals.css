@@ -99,3 +99,9 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+@media only scree and (max-width: 900px) {
+  .background3, .background-1, .background-2, .background-4{
+    background-size: contain;
+  }
+}
