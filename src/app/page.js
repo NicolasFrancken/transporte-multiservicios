@@ -60,7 +60,7 @@ export default function Home() {
           radius="full"
           className="bg-orange-500 font-semibold lg:font-bold md:text-lg lg:text-xl xl:text-3xl text-white self-center mt-4 mb-7"
           onPress={() => {
-            router.push("#envios");
+            router.push("/#envios");
           }}
           size="lg"
         >
