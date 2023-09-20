@@ -52,17 +52,26 @@ export default function Home() {
             SERVICIO DIARIO <br /> DE
             <span className="text-orange-500"> CARGAS RÁPIDAS</span>
           </h1>
-          <p className="font-bold text-lg md:text-xl lg:text-3xl xl:text-5xl text-white mt-2 lg:mt-4">
+          <p className="font-bold text-lg md:text-xl lg:text-3xl xl:text-5xl text-white mt-2 lg:mt-4 lg:mb-8">
             ENTREGA Y RETIRO A DOMICILIO
           </p>
         </div>
+        <Button
+          radius="full"
+          className="bg-orange-500 font-bold md:text-lg lg:text-xl xl:text-3xl text-white self-center"
+          as={Link}
+          size="lg"
+          href="#envios"
+        >
+          Quiero hacer un envío
+        </Button>
         <Card
-          className="border-none bg-white/50 max-w-7xl self-center"
+          className="border-none bg-white/70 max-w-7xl self-center"
           shadow="lg"
           radius="lg"
         >
           <CardBody>
-            <p className="font-bold text-xl lg:text-3xl xl:text-5xl text-center">
+            <p className="font-bold text-xl lg:text-3xl xl:text-5xl text-center text-black">
               BARILOCHE - SAN MARTÍN - JUNÍN - EL BOLSÓN - VILLA LA ANGOSTURA -
               NEUQUÉN
             </p>
