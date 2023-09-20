@@ -44,7 +44,7 @@ export default function Home() {
     <NextUIProvider>
       <Navigationbar />
       <section
-        className="md:min-h-screen px-8 pt-48 pb-[5rem] lg:px-28 lg:pt-40 background1 flex flex-col justify-between"
+        className="md:min-h-screen px-8 pt-40 pb-20 lg:px-28 lg:pt-40 background1 flex flex-col justify-between"
         id="main"
       >
         <div className="xl:w-[65rem] flex flex-col items-center lg:items-start lg:text-start">
@@ -52,16 +52,17 @@ export default function Home() {
             SERVICIO DIARIO <br /> DE
             <span className="text-orange-500"> CARGAS RÁPIDAS</span>
           </h1>
-          <p className="font-bold text-lg md:text-xl lg:text-3xl xl:text-5xl text-white mt-2 lg:mt-4 lg:mb-8">
+          <p className="font-bold text-lg md:text-xl lg:text-3xl xl:text-5xl text-white mt-2 lg:mt-4">
             ENTREGA Y RETIRO A DOMICILIO
           </p>
         </div>
         <Button
           radius="full"
-          className="bg-orange-500 font-bold md:text-lg lg:text-xl xl:text-3xl text-white self-center"
-          as={Link}
+          className="bg-orange-500 font-semibold lg:font-bold md:text-lg lg:text-xl xl:text-3xl text-white self-center mt-4 mb-7"
+          onPress={() => {
+            router.push("#envios");
+          }}
           size="lg"
-          href="#envios"
         >
           Quiero hacer un envío
         </Button>
