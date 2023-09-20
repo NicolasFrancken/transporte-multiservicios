@@ -59,9 +59,9 @@ export default function Home() {
         <Button
           radius="full"
           className="bg-orange-500 font-semibold lg:font-bold md:text-lg lg:text-xl xl:text-3xl text-white self-center mt-4 mb-7"
-          onPress={() => {
-            router.push("/#envios");
-          }}
+as={Link}
+href="#envios"
+
           size="lg"
         >
           Quiero hacer un envío
