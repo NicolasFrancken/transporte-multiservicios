@@ -101,7 +101,7 @@ href="#envios"
         </Button>
       </section>
       <div className="py-24 lg:py-64 background2">
-        <section className="py-8 lg:py-12 bg-white/50">
+        <section className="hidden md:block py-8 lg:py-12 bg-white/50">
           <ScrollCarousel />
         </section>
       </div>
