@@ -59,9 +59,8 @@ export default function Home() {
         <Button
           radius="full"
           className="bg-orange-500 font-semibold lg:font-bold md:text-lg lg:text-xl xl:text-3xl text-white self-center mt-4 mb-7"
-as={Link}
-href="#envios"
-
+          as={Link}
+          href="#envios"
           size="lg"
         >
           Quiero hacer un envío
@@ -111,7 +110,7 @@ href="#envios"
           id="envios"
         >
           <h2 className="font-bold text-2xl  sm:text-4xl lg:text-5xl text-white ">
-            ¿Como hago un <span className="text-orange-500">envío</span>?
+            ¿Como hago un envío?
           </h2>
           <div className="w-full lg:w-[60rem] flex flex-col justify-center items-center self-center lg:mt-32">
             <TabsComponent />

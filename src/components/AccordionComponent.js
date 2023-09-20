@@ -13,32 +13,35 @@ export default function AccordionComponent() {
           En <span className="text-orange-500">Bariloche </span>
           contamos con una sucursal en la calle
           <span className="text-orange-500"> Mitre 1360</span>. Podes acercarte
-          y dejar tu paquete o escribirnos a nuestro WhatsApp!
+          y dejar tu paquete o escribirnos a nuestro WhatsApp y lo pasamos a
+          buscar!
         </p>
       </AccordionItem>
       <AccordionItem
         key="2"
-        aria-label="San Martin"
-        title="San Martin"
+        aria-label="San Martín"
+        title="San Martín"
         className="font-semibold"
       >
         <p>
-          En <span className="text-orange-500">San Martin </span>
+          En <span className="text-orange-500">San Martín </span>
           contamos con una sucursal en la calle
           <span className="text-orange-500"> General Roca 542</span>. Podes
-          acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp!
+          acercarte y dejar tu paquete o escribirnos a nuestro WhatsApp y lo
+          pasamos a buscar!
         </p>
       </AccordionItem>
       <AccordionItem
         key="3"
-        aria-label="Junin"
-        title="Junin"
+        aria-label="Junín"
+        title="Junín"
         className="font-semibold"
       >
         <p>
-          En <span className="text-orange-500">Junin </span>
-          no contamos con una sucursal. Podes acercarte a San Martin y dejar tu
-          paquete o escribirnos a nuestro WhatsApp y lo pasamos a buscar!
+          Para hacer un envío desde
+          <span className="text-orange-500"> Junín </span>
+          podes acercarte a San Martín y dejar tu paquete o escribirnos a
+          nuestro WhatsApp y lo pasamos a buscar!
         </p>
       </AccordionItem>
       <AccordionItem
@@ -48,22 +51,21 @@ export default function AccordionComponent() {
         className="font-semibold"
       >
         <p>
-          En
+          Para hacer un envío desde
           <span className="text-orange-500"> Villa La Angostura </span>
-          no contamos con sucursal. Escribirnos a nuestro WhatsApp y lo pasamos
-          a buscar!
+          podes escribirnos a nuestro WhatsApp así lo pasamos a buscar!
         </p>
       </AccordionItem>
       <AccordionItem
         key="5"
-        aria-label="Neuquen"
-        title="Neuquen"
+        aria-label="Neuquén"
+        title="Neuquén"
         className="font-semibold"
       >
         <p>
-          En <span className="text-orange-500">Nuequen </span>
-          no contamos con una sucursal. Escribirnos a nuestro WhatsApp y lo
-          pasamos a buscar!
+          Para hacer un envío desde
+          <span className="text-orange-500"> Nuequén </span>
+          podes escribirnos a nuestro WhatsApp así lo pasamos a buscar!
         </p>
       </AccordionItem>
     </Accordion>
