@@ -75,9 +75,9 @@ export default function Home() {
               {/* BARILOCHE - SAN MARTÍN Y JUNÍN DE LOS ANDES - EL BOLSÓN - VILLA LA
               ANGOSTURA - NEUQUÉN - EL VALLE - CIPOLLETTI - EL HOYO - BAHIA
               BLANCA - LAGO PUELO - CHOLILA - ESQUEL - TREVELIN */}
-              Bariloche - San Martín y Junín de los Andes - Villa la Angostura -
-              Neuquén - El Valle - Cipolletti - El Hoyo - El Bolsón - Lago Puelo
-              - Cholila - Esquel - Bahía Blanca - Trevelin
+              Bariloche - San Martín de los Andes - Junín de los Andes - Villa
+              la Angostura - Neuquén - El Valle - Cipolletti - El Hoyo - El
+              Bolsón - Lago Puelo - Cholila - Esquel - Bahía Blanca - Trevelin
             </p>
           </CardBody>
         </Card>
