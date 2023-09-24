@@ -58,7 +58,7 @@ export default function Home() {
         </div>
         <Button
           radius="full"
-          className="bg-orange-500 font-semibold lg:font-bold md:text-lg lg:text-xl xl:text-3xl text-white self-center mt-4 mb-7"
+          className="bg-orange-500 font-semibold lg:font-bold md:text-lg lg:text-xl xl:text-3xl text-white self-center mt-4 mb-7 md:my-20"
           as={Link}
           href="#envios"
           size="lg"
@@ -66,14 +66,18 @@ export default function Home() {
           Quiero hacer un envío
         </Button>
         <Card
-          className="border-none bg-white/70 max-w-7xl self-center"
+          className="border-none bg-white/70 max-w-7xl w-fit self-center"
           shadow="lg"
           radius="lg"
         >
           <CardBody>
-            <p className="font-bold text-xl lg:text-3xl xl:text-5xl text-center text-black">
-              BARILOCHE - SAN MARTÍN - JUNÍN - EL BOLSÓN - VILLA LA ANGOSTURA -
-              NEUQUÉN
+            <p className="font-bold text-xl lg:text-2xl xl:text-4xl text-center text-black">
+              {/* BARILOCHE - SAN MARTÍN Y JUNÍN DE LOS ANDES - EL BOLSÓN - VILLA LA
+              ANGOSTURA - NEUQUÉN - EL VALLE - CIPOLLETTI - EL HOYO - BAHIA
+              BLANCA - LAGO PUELO - CHOLILA - ESQUEL - TREVELIN */}
+              Bariloche - San Martín y Junín de los Andes - Villa la Angostura -
+              Neuquén - El Valle - Cipolletti - El Hoyo - El Bolsón - Lago Puelo
+              - Cholila - Esquel - Bahía Blanca - Trevelin
             </p>
           </CardBody>
         </Card>
@@ -99,33 +103,32 @@ export default function Home() {
           />
         </Button>
       </section>
-      <div className="hidden lg:block py-24 lg:py-64 background2">
+      {/* <div className="hidden lg:block py-24 lg:py-64 background2">
         <section className=" py-8 lg:py-12 bg-white/50">
           <ScrollCarousel />
         </section>
-      </div>
+      </div> */}
       <div className="background3 relative h-full">
         <section
           className="min-h-screen px-8 py-[7rem] pb-4 lg:pb-[7rem] lg:px-28 lg:pt-40 flex flex-col text-center sm:max-lg:justify-start lg:text-start"
           id="envios"
         >
-          <h2 className="font-bold text-2xl  sm:text-4xl lg:text-5xl text-white ">
+          <h2 className="font-bold text-3xl  sm:text-4xl lg:text-5xl text-white mb-8 md:mb-8">
             ¿Como hago un envío?
           </h2>
           <div className="w-full lg:w-[60rem] flex flex-col justify-center items-center self-center lg:mt-32">
-            <TabsComponent />
             <AccordionComponent />
             <Button
-              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-0 text-black bg-white"
+              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-8 text-black bg-white"
               isBlock
               onPress={onOpenLink}
             >
-              ¿Cómo embalo mi paquete?
+              ¿Cómo despacho mi envío?
             </Button>
             <LinkModal
               isOpen={isOpenLink}
               onOpenChange={onOpenChangeLink}
-              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-3 text-black bg-white/50"
+              className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 text-black bg-white/50"
               isBlock
             />
             <Button
@@ -133,11 +136,11 @@ export default function Home() {
               isBlock
               onPress={() => {
                 router.push(
-                  "https://wa.me/+542944640770?text=Quiero%20cotizar%20un%20envío!"
+                  "https://wa.me/+542944554970?text=Quiero%20cotizar%20un%20envío!"
                 );
               }}
             >
-              Cotizá tu paquete
+              Cotizá tu envío/mudanza
             </Button>
           </div>
         </section>

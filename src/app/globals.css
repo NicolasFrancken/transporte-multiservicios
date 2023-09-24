@@ -16,42 +16,42 @@ body {
   margin: 0;
 }
 
-.background1{
+.background1 {
   background-image: url("../../public/background1.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  -webkit-background-size:cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-.background2{
+.background2 {
   background-image: url("../../public/background2.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  -webkit-background-size:cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-.background3{
+.background3 {
   background-image: url("../../public/background3.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 
-  -webkit-background-size:cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
 
-.background4{
+.background4 {
   background-image: url("../../public/background4.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-background-size:cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
@@ -76,7 +76,7 @@ body {
 }
 .background-4 {
   background-image: url("../../public/4.webp");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -85,14 +85,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}  
+}
 .background-6 {
   background-image: url("../../public/6.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.background-7{
+.background-7 {
   background-image: url("../../public/7.webp");
   background-repeat: no-repeat;
   background-position: center;
@@ -112,17 +112,11 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
-  .background1{
+  .background1 {
     min-height: calc(100vh - 3rem);
   }
-  .background3{
+  .background3 {
     background-image: url("../../public/7.webp");
     background-position: bottom;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .background2{
-    background-attachment: scroll;
   }
 }

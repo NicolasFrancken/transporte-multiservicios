@@ -27,7 +27,7 @@ export default function WppModal({ isOpen, onOpenChange }) {
                 <Button
                   as={Link}
                   className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
-                  href="https://wa.me/+542944640770?text=Quiero%20hacer%20un%20envio%20desde%20Bariloche!%20¿Cómo%20hago?"
+                  href="https://wa.me/+542944554970?text=Quiero%20hacer%20un%20envío%20desde%20Bariloche!%20¿Cómo%20hago?"
                 >
                   Bariloche
                   <Image
@@ -40,9 +40,9 @@ export default function WppModal({ isOpen, onOpenChange }) {
                 <Button
                   as={Link}
                   className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
-                  href="https://wa.me/+542944645301?text=Quiero%20hacer%20un%20envio%20desde%20San%20Martín%Cómo%20hago?"
+                  href="https://wa.me/+542944249796?text=Quiero%20hacer%20un%20envío%20desde%20San%20Martín%20¿Cómo%20hago?"
                 >
-                  San Martín
+                  San Martín de los Andes
                   <Image
                     src={"/WhatsApp.webp"}
                     alt="WhatsApp"
@@ -53,9 +53,9 @@ export default function WppModal({ isOpen, onOpenChange }) {
                 <Button
                   as={Link}
                   className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
-                  href="https://wa.me/+542944645301?text=Quiero%20hacer%20un%20envio%20desde%20Junín!%20¿Cómo%20hago?"
+                  href="https://wa.me/+542944249796?text=Quiero%20hacer%20un%20envío%20desde%20Junín%20¿Cómo%20hago?"
                 >
-                  Junín
+                  Junín de los Andes
                   <Image
                     src={"/WhatsApp.webp"}
                     alt="WhatsApp"
@@ -66,7 +66,7 @@ export default function WppModal({ isOpen, onOpenChange }) {
                 <Button
                   as={Link}
                   className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
-                  href="https://wa.me/+542944640770?text=Quiero%20hacer%20un%20envio%20desde%20Villa%20la%20Angostura!%20¿Cómo%20hago?"
+                  href="https://wa.me/+542944249796?text=Quiero%20hacer%20un%20envío%20desde%20Villa%20la%20Angostura!%20¿Cómo%20hago?"
                 >
                   Villa la Angostura
                   <Image
@@ -79,9 +79,9 @@ export default function WppModal({ isOpen, onOpenChange }) {
                 <Button
                   as={Link}
                   className="flex justify-between font-semibold text-xl py-2 pl-8 bg-white h-fit"
-                  href="https://wa.me/+542996088211?text=Quiero%20hacer%20un%20envio%20desde%20Neuquén!%20¿Cómo%20hago?"
+                  href="https://wa.me/+542996088211?text=Quiero%20hacer%20un%20envío%20desde%20Neuquén!%20¿Cómo%20hago?"
                 >
-                  Neuquén
+                  Neuquén, Cipolletti y el Valle
                   <Image
                     src={"/WhatsApp.webp"}
                     alt="WhatsApp"
