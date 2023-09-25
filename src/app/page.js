@@ -95,8 +95,8 @@ export default function Home() {
           >
             <AccordionItem
               key="1"
-              aria-label="Envíos en toda la zona Sur!"
-              title="Envíos en toda la zona Sur"
+              aria-label="Nuestros destinos"
+              title="Nuestros destinos"
               className="font-semibold md:text-2xl"
             >
               Bariloche - San Martín de los Andes - Junín de los Andes - Villa
