@@ -153,7 +153,7 @@ export default function Home() {
           id="envios"
         >
           <h2 className="font-bold text-3xl  sm:text-4xl lg:text-5xl text-white mb-20 xl:mb-0">
-            ¿Como hago un envío?
+            ¿Cómo hago un envío?
           </h2>
           <div className="w-full xl:w-[60rem] flex flex-col justify-center items-center self-center xl:mt-32">
             <AccordionComponent />
