@@ -113,10 +113,10 @@ export default function Home() {
           className="min-h-screen px-8 py-[7rem] pb-4 lg:pb-[7rem] lg:px-28 lg:pt-40 flex flex-col text-center sm:max-lg:justify-start lg:text-start"
           id="envios"
         >
-          <h2 className="font-bold text-3xl  sm:text-4xl lg:text-5xl text-white mb-8 md:mb-8">
+          <h2 className="font-bold text-3xl  sm:text-4xl lg:text-5xl text-white mb-20 xl:mb-0">
             ¿Como hago un envío?
           </h2>
-          <div className="w-full lg:w-[60rem] flex flex-col justify-center items-center self-center lg:mt-32">
+          <div className="w-full lg:w-[60rem] flex flex-col justify-center items-center self-center xl:mt-32">
             <AccordionComponent />
             <Button
               className="self-center lg:self-end font-semibold texl-xl lg:text-2xl mt-4 lg:mr-6 lg:mt-8 text-black bg-white"
