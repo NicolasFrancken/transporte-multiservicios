@@ -88,7 +88,7 @@ export default function Home() {
             </p>
           </CardBody>
         </Card> */}
-        <div className="w-full lg:w-[60rem] flex self-center">
+        <div className="w-full xl:w-[60rem] flex self-center">
           <Accordion
             variant="splitted"
             isCompact={false}
