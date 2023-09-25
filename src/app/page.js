@@ -123,7 +123,7 @@ export default function Home() {
         <Button
           className="fixed w-fit h-fit bg-transparent min-w-fit gap-unit-0 p-3 lg:p-6 bottom-0 right-0 z-10"
           radius="full"
-          onPress={onOpenWpp}
+          onClick={onOpenWpp}
         >
           <WppModal isOpen={isOpenWpp} onOpenChange={onOpenChangeWpp} />
           <Image
