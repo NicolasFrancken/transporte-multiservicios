@@ -24,7 +24,7 @@ export default function AccordionComponent() {
         title="San Martín de los Andes"
         className="font-semibold md:text-2xl "
       >
-        En <span className="text-orange-500">San Martín de los Andes</span>
+        En <span className="text-orange-500">San Martín de los Andes </span>
         contamos con una sucursal en la calle
         <span className="text-orange-500"> General Roca 542.</span> Podes
         acercarte y despachar o escribirnos a nuestro WhatsApp y coordinamos!
