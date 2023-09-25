@@ -63,17 +63,16 @@ export default function Home() {
             ENTREGA Y RETIRO A DOMICILIO
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center mt-4 mb-7 md:my-20">
-          <Button
-            radius="full"
-            className="bg-orange-500 font-semibold lg:font-bold md:text-lg lg:text-xl xl:text-3xl text-white self-center mb-4"
-            as={Link}
-            href="#envios"
-            size="lg"
-          >
-            Quiero hacer un envío
-          </Button>
-        </div>
+        <Button
+          radius="full"
+          className="bg-orange-500 font-semibold lg:font-bold md:text-lg lg:text-xl xl:text-3xl text-white self-center mt-4 mb-7 md:my-20"
+          as={Link}
+          href="#envios"
+          size="lg"
+        >
+          Quiero hacer un envío
+        </Button>
+
         {/* <Card
           className="border-none bg-white/70 max-w-7xl w-fit self-center"
           shadow="lg"
