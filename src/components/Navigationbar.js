@@ -57,7 +57,7 @@ export default function Navigationbar() {
       <NavbarItem>
         <Button
           size="lg"
-          className="font-bold bg-orange-400 hidden md:flex"
+          className="font-bold text-lg bg-orange-400 hidden md:flex"
           as={Link}
           href="#envios"
         >
@@ -69,7 +69,7 @@ export default function Navigationbar() {
         <NavbarMenuItem>
           <Button
             size="lg"
-            className="font-bold bg-orange-400"
+            className="font-bold text-lg bg-orange-400"
             as={Link}
             href={"#envios"}
             onClick={handleEnviosClick}
