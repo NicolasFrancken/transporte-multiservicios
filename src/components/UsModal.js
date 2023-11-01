@@ -36,24 +36,22 @@ export default function UsModal({ isOpen, onOpenChange }) {
                   <CardBody className="font-semibold text-sm md:text-xl py-6 px-6 md:pt-6 md:pb-12 md:px-12">
                     <p>
                       Somos una empresa familiar que comenzó en el 2007 haciendo
-                      envíos en la ciudad de San Carlos de Bariloche. De a poco
-                      los clientes comenzaron a preguntar por envíos a San
-                      Martín de los Andes, por lo que decidimos comenzar a
-                      viajar hacia allí.
+                      transporte en S.C. de Bariloche. De a poco llegaron varias
+                      consultas de nuestros clientes con respecto a envíos a San
+                      Martín de los Andes y decidimos viajar en forma regular
+                      hacia allá.
                     </p>
                     <p>
-                      AL cabo de varios años, y por pedido de nuestros clientes,
-                      en el 2017 iniciamos viajes hacia Neuquén y sus
-                      alrededores.
+                      A lo largo de un tiempo de crecimiento constante en el año
+                      2018 comenzamos a realizar servicio regular a Neuquén
+                      capital para luego también unir otras localidades como
+                      Gral. Roca y toda la zona del Valle, Zapala y el Norte
+                      Neuquino.
                     </p>
                     <p>
-                      Ha sido un largo camino de aprendizaje. Hoy en día nos
-                      consideramos los mejores en lo que hacemos, con mas de 15
-                      años en el rubro.
-                    </p>
-                    <p>
-                      Agradecemos a todos nuestros clientes por confiar
-                      diariamente en nosotros!
+                      Ha sido un largo camino de aprendizaje. Agradecemos a
+                      todos nuestros clientes por confiar diariamente en
+                      nosotros.
                     </p>
                   </CardBody>
                 </Card>

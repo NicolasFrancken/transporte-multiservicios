@@ -72,21 +72,6 @@ export default function Home() {
         >
           Quiero hacer un envío
         </Button>
-
-        {/* <Card
-          className="border-none bg-white/70 max-w-7xl w-fit self-center"
-          shadow="lg"
-          radius="lg"
-        >
-          <CardBody>
-            <p className="font-bold text-xl lg:text-2xl xl:text-4xl text-center text-black">
-        
-              Bariloche - San Martín de los Andes - Junín de los Andes - Villa
-              la Angostura - Neuquén - El Valle - Cipolletti - El Hoyo - El
-              Bolsón - Lago Puelo - Cholila - Esquel - Bahía Blanca - Trevelin
-            </p>
-          </CardBody>
-        </Card> */}
         <div className="w-full xl:w-[60rem] flex self-center">
           <Accordion
             variant="splitted"
