@@ -82,7 +82,7 @@ export default function Home() {
               key="1"
               aria-label="Nuestros destinos"
               title="Nuestros destinos"
-              className="font-semibold md:text-2xl"
+              className=" md:text-2xl"
             >
               Bariloche - San Martín de los Andes - Junín de los Andes - Villa
               la Angostura - Neuquén - El Valle - Cipolletti - El Hoyo - El
@@ -92,7 +92,7 @@ export default function Home() {
               key="2"
               aria-label="También hacemos mudanzas y contrareembolsos!"
               title="También hacemos mudanzas y contrareembolsos!"
-              className="font-semibold md:text-2xl"
+              className=" md:text-2xl"
             >
               Por mudanzas hacé tu consulta a nuestro{" "}
               <a
