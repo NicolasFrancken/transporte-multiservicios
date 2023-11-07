@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Transporte Multiservicios",
-  description: "Hace tu envio en la sona sur de Argentina",
+  description: "Envíos en la zona sur de Argentina",
 };
 
 export default function RootLayout({ children }) {
