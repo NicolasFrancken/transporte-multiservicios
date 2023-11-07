@@ -44,7 +44,7 @@ export default function Home() {
   } = useDisclosure();
 
   const itemClasses = {
-    title: "md:text-2xl",
+    title: "font-semibold md:text-2xl",
   };
 
   return (
