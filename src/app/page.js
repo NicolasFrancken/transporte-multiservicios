@@ -51,7 +51,7 @@ export default function Home() {
     <NextUIProvider>
       <Navigationbar />
       <section
-        className="md:min-h-screen px-8 pt-28 pb-20 lg:px-28 lg:pt-40 background1 flex flex-col justify-between"
+        className="min-h-screen px-8 pt-28 pb-20 lg:px-28 lg:pt-40 background1 flex flex-col justify-between"
         id="main"
       >
         <div className="xl:w-[65rem] flex flex-col items-center lg:items-start lg:text-start">
